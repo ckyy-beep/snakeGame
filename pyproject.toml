@@ -6,8 +6,9 @@ authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.12,<3.14"
 pygame = "2.6.0"
+pyinstaller = "^6.10.0"
 
 
 [build-system]
