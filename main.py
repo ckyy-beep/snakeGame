@@ -12,10 +12,11 @@ pygame.display.set_caption('My humble snake game')
 white = (255, 255, 255)
 black = (0, 0, 0)
 red = (250, 128, 144)
+bright_red = (220, 20, 60)
 green = (60, 179, 113)
 
 snake_block = 10
-snake_speed = 16
+snake_speed = 12
 
 font_style = pygame.font.SysFont('impact', 28)
 
@@ -86,7 +87,7 @@ def game_loop():
         y += y_change
         display.fill(black)
 
-        pygame.draw.rect(display, white, [food_x, food_y, snake_block, snake_block])
+        pygame.draw.rect(display, bright_red, [food_x, food_y, snake_block, snake_block])
 
         snake_head = []
         snake_head.append(x)
